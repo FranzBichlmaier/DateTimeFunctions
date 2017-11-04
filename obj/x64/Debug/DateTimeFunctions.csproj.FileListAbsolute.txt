@@ -1,0 +1,4 @@
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\x64\Debug\DateTimeFunctions.dll
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\x64\Debug\DateTimeFunctions.pdb
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\x64\Debug\DateTimeFunctions.dll
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\x64\Debug\DateTimeFunctions.pdb

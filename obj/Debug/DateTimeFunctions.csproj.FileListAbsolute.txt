@@ -1,0 +1,18 @@
+C:\Users\Bichlmaier\Documents\Visual Studio 2013\Projects\DemoEqualCorrelation\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll
+C:\Users\Bichlmaier\Documents\Visual Studio 2013\Projects\DemoEqualCorrelation\DateTimeFunctions\bin\Debug\DateTimeFunctions.pdb
+C:\Users\Bichlmaier\Documents\Visual Studio 2013\Projects\DemoEqualCorrelation\DateTimeFunctions\obj\Debug\DateTimeFunctions.csprojResolveAssemblyReference.cache
+C:\Users\Bichlmaier\Documents\Visual Studio 2013\Projects\DemoEqualCorrelation\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
+C:\Users\Bichlmaier\Documents\Visual Studio 2013\Projects\DemoEqualCorrelation\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.pdb
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csprojResolveAssemblyReference.cache
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll.CodeAnalysisLog.xml
+C:\Users\Bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll.lastcodeanalysissucceeded
+C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll
+C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.pdb
+C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csprojResolveAssemblyReference.cache
+C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.CoreCompileInputs.cache
+C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
+C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
