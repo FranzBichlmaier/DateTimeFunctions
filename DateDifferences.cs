@@ -11,12 +11,14 @@ namespace DateTimeFunctions
         private DateTime startDate;
         private DateTime endDate;
 
+        private string[] MonthNames = new string[] { "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" };
+
         /// <summary>
         /// return number of years between two dates (Date only).
         /// if startDate is after endDate a negative number is returned
         /// </summary>
-        /// <param name="start"></param>
-        /// <param name="end"></param>
+        /// <param name="start">the start date or from date</param>
+        /// <param name="end">the end date or to date</param>
         /// <returns></returns>
         public double Years(DateTime start, DateTime end)
         {
@@ -49,8 +51,8 @@ namespace DateTimeFunctions
         /// returns number of months between two dates (Date only).
         /// if startDate is after endDate a negative number is returned
         /// </summary>
-        /// <param name="start"></param>
-        /// <param name="end"></param>
+        /// <param name="start">the start date or from date</param>
+        /// <param name="end">the end date or to date</param>
         /// <returns></returns>
         public double Months(DateTime start, DateTime end)
         {
@@ -84,8 +86,8 @@ namespace DateTimeFunctions
         /// returns number of weeks between two dates (Date only).
         /// if startDate is after endDate a negativenumber is returned
         /// </summary>
-        /// <param name="start"></param>
-        /// <param name="end"></param>
+        /// <param name="start">the start date or from date</param>
+        /// <param name="end">the end date or to date</param>
         /// <returns></returns>
         public double Weeks(DateTime start, DateTime end)
         {
@@ -118,8 +120,8 @@ namespace DateTimeFunctions
         /// counts the number of quarters (including startQuarter) starting with startDate to endDate. If dates are in the same quarter the result is '1'. 
         /// If endDate is before startDate a negativ number is returned. 
         /// </summary>
-        /// <param name="start"></param>
-        /// <param name="end"></param>
+        /// <param name="start">the start date or from date</param>
+        /// <param name="end">the end date or to date</param>
         /// <returns></returns>
         public int Quarters(DateTime start, DateTime end)
         {
@@ -305,6 +307,42 @@ namespace DateTimeFunctions
                 return new Tuple<DateTime, DateTime>(new DateTime(year, 9, 1), new DateTime(year, 12, 31));
             }             
           
+        }
+
+        /// <summary>
+        /// returns a DateTime of the previous weekday without taking bank holidays into account
+        /// </summary>
+        /// <param name="startDate">basis date</param>
+        /// <param name="days"> number of days to go back</param>
+        /// <returns></returns>
+        public DateTime GetPreviousWorkingDay(DateTime startDate, int days)
+        {
+            DateTime resultDate = startDate.AddDays(days * -1);
+
+            int weekday = (int)resultDate.DayOfWeek;  // returns the day of a week as an integer starting with Sunday =0,  Monday = 1, ...
+            if (weekday >0 && weekday<6) return resultDate;
+          
+                resultDate = resultDate.AddDays(-2);    // take weekend into account           
+            return resultDate;         
+            
+
+        }
+        public List<Bll_QuarterDescription> GetQuarterList(DateTime fromDate, DateTime? toDate)
+        {
+            if (toDate == null) toDate = DateTime.Now;
+            List<Bll_QuarterDescription> returnList = new List<Bll_QuarterDescription>();
+            fromDate = NextQuarter(fromDate);
+            do
+            {
+                Bll_QuarterDescription item = new Bll_QuarterDescription();
+                item.QuarterEnd = fromDate;
+                item.RomanString = GetQuarterAsString(fromDate);
+                item.MonthYearString = MonthNames[fromDate.Month - 1] + " " + fromDate.Year.ToString();
+                returnList.Add(item);
+                fromDate = NextQuarter(fromDate);
+
+            } while (fromDate <= toDate);
+            return returnList;
         }
     }
 }
