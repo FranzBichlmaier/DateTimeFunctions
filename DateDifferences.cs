@@ -13,6 +13,8 @@ namespace DateTimeFunctions
 
         private string[] MonthNames = new string[] { "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" };
 
+        
+
         /// <summary>
         /// return number of years between two dates (Date only).
         /// if startDate is after endDate a negative number is returned

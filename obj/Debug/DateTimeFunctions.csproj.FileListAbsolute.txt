@@ -16,3 +16,15 @@ C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunction
 C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
 C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
 C:\Users\franz bichlmaier\Documents\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csprojAssemblyReference.cache
+C:\Users\franz bichlmaier\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll
+C:\Users\franz bichlmaier\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.pdb
+C:\Users\franz bichlmaier\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csprojAssemblyReference.cache
+C:\Users\franz bichlmaier\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.CoreCompileInputs.cache
+C:\Users\franz bichlmaier\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
+C:\Users\franz bichlmaier\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\bin\Debug\DateTimeFunctions.pdb
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.AssemblyReference.cache
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.CoreCompileInputs.cache
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
