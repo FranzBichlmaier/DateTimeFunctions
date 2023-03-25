@@ -28,3 +28,9 @@ C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Project
 C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.CoreCompileInputs.cache
 C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
 C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
+C:\Users\franz\source\repos\DateTimeFunctions\bin\Debug\DateTimeFunctions.dll
+C:\Users\franz\source\repos\DateTimeFunctions\bin\Debug\DateTimeFunctions.pdb
+C:\Users\franz\source\repos\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.AssemblyReference.cache
+C:\Users\franz\source\repos\DateTimeFunctions\obj\Debug\DateTimeFunctions.csproj.CoreCompileInputs.cache
+C:\Users\franz\source\repos\DateTimeFunctions\obj\Debug\DateTimeFunctions.dll
+C:\Users\franz\source\repos\DateTimeFunctions\obj\Debug\DateTimeFunctions.pdb
