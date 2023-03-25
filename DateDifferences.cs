@@ -49,6 +49,29 @@ namespace DateTimeFunctions
 
             return (yearDiff + (timeSpan.Days / 365))*factor;
         }
+        public double NumberOfMonths(DateTime startdate, DateTime enddate)
+        {
+            DateTime start = startdate.Date;
+            DateTime end = enddate.Date;
+            TimeSpan span = end.Subtract(start);
+
+            double months = (double)span.Days / (double)30;
+            months = Math.Truncate(months);
+            DateTime helpDate = start.AddMonths((int)months);
+            // if helpDate == end ==> return months
+            if (helpDate == end) return months;
+           
+                // add another month ==> if helpDate is equal to end return months+1
+                DateTime helpDate2 = helpDate.AddMonths(1);
+                if (helpDate2 == endDate) return months + 1;
+                span = helpDate2.Subtract(helpDate);
+                int numberOfDaysForMonth = span.Days;
+                span = end.Subtract(helpDate);
+                int numberOfDaysUntilEnd = span.Days;
+                double fraction = 1 / (double)numberOfDaysForMonth * (double)numberOfDaysUntilEnd;
+                return months + fraction;
+          
+        }
         /// <summary>
         /// returns number of months between two dates (Date only).
         /// if startDate is after endDate a negative number is returned
