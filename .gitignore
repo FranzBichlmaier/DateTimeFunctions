@@ -1,0 +1,8 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/.vs/DateTimeFunctions/FileContentIndex/fcb159db-3a99-4cf3-b757-de014bac1cd6.vsidx
+/.vs/DateTimeFunctions/FileContentIndex/read.lock
+/.vs/DateTimeFunctions/v17/.wsuo
+/.gitignore
