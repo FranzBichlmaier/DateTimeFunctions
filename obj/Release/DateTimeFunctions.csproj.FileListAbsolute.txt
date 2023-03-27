@@ -1,0 +1,6 @@
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\bin\Release\DateTimeFunctions.dll
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\bin\Release\DateTimeFunctions.pdb
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Release\DateTimeFunctions.csproj.AssemblyReference.cache
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Release\DateTimeFunctions.csproj.CoreCompileInputs.cache
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Release\DateTimeFunctions.dll
+C:\Users\franz\OneDrive - Franz Bichlmaier Consulting\Visual Studio 2017\Projects\DateTimeFunctions\obj\Release\DateTimeFunctions.pdb
