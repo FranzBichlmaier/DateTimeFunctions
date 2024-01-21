@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DateTimeFunctions
 {
@@ -13,7 +10,7 @@ namespace DateTimeFunctions
 
         private string[] MonthNames = new string[] { "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" };
 
-        
+
 
         /// <summary>
         /// return number of years between two dates (Date only).
@@ -47,7 +44,7 @@ namespace DateTimeFunctions
             helpDate = this.endDate.AddYears(yearDiff * -1);
             timeSpan = this.endDate.Subtract(helpDate);
 
-            return (yearDiff + (timeSpan.Days / 365))*factor;
+            return (yearDiff + (timeSpan.Days / 365)) * factor;
         }
         public double NumberOfMonths(DateTime startdate, DateTime enddate)
         {
@@ -60,17 +57,17 @@ namespace DateTimeFunctions
             DateTime helpDate = start.AddMonths((int)months);
             // if helpDate == end ==> return months
             if (helpDate == end) return months;
-           
-                // add another month ==> if helpDate is equal to end return months+1
-                DateTime helpDate2 = helpDate.AddMonths(1);
-                if (helpDate2 == endDate) return months + 1;
-                span = helpDate2.Subtract(helpDate);
-                int numberOfDaysForMonth = span.Days;
-                span = end.Subtract(helpDate);
-                int numberOfDaysUntilEnd = span.Days;
-                double fraction = 1 / (double)numberOfDaysForMonth * (double)numberOfDaysUntilEnd;
-                return months + fraction;
-          
+
+            // add another month ==> if helpDate is equal to end return months+1
+            DateTime helpDate2 = helpDate.AddMonths(1);
+            if (helpDate2 == endDate) return months + 1;
+            span = helpDate2.Subtract(helpDate);
+            int numberOfDaysForMonth = span.Days;
+            span = end.Subtract(helpDate);
+            int numberOfDaysUntilEnd = span.Days;
+            double fraction = 1 / (double)numberOfDaysForMonth * (double)numberOfDaysUntilEnd;
+            return months + fraction;
+
         }
         /// <summary>
         /// returns number of months between two dates (Date only).
@@ -165,7 +162,7 @@ namespace DateTimeFunctions
                 else
                 {
                     return quarterStart - quarterEnd;
-                }                
+                }
             }
             else if (quarterStartYear < quarterEndYear)
             {
@@ -177,7 +174,7 @@ namespace DateTimeFunctions
             {
                 int nrQuarters = (quarterStartYear - quarterEndYear - 1) * 4;
                 nrQuarters = nrQuarters + (5 - quarterEnd) + quarterStart;
-                return nrQuarters*-1;
+                return nrQuarters * -1;
             }
         }
         /// <summary>
@@ -199,9 +196,9 @@ namespace DateTimeFunctions
             myDate = myDate.AddDays(1);
             return new DateTime(myDate.Year, myDate.Month, DateTime.DaysInMonth(myDate.Year, myDate.Month));
         }
-        public DateTime PreviousMonthEnd (DateTime myDate)
+        public DateTime PreviousMonthEnd(DateTime myDate)
         {
-            
+
             myDate = new DateTime(myDate.Year, myDate.Month, 1);
             myDate = myDate.AddDays(-1);
             return myDate;
@@ -218,8 +215,8 @@ namespace DateTimeFunctions
 
         public DateTime PreviousQuarter(DateTime myDate)
         {
-          
-            if (myDate.Month <= 3) return new DateTime(myDate.Year-1, 12, 31);
+
+            if (myDate.Month <= 3) return new DateTime(myDate.Year - 1, 12, 31);
             if (myDate.Month <= 6) return new DateTime(myDate.Year, 3, 31);
             if (myDate.Month <= 9) return new DateTime(myDate.Year, 6, 30);
             return new DateTime(myDate.Year, 9, 30);
@@ -236,26 +233,26 @@ namespace DateTimeFunctions
         {
             myDate = myDate.AddDays(-1);
             if (myDate.Month > 6) return new DateTime(myDate.Year, 6, 30);
-            return new DateTime(myDate.Year-1, 12, 31);
+            return new DateTime(myDate.Year - 1, 12, 31);
         }
 
         public DateTime NextYearEnd(DateTime myDate)
         {
-            myDate = myDate.AddDays(1);          
+            myDate = myDate.AddDays(1);
             return new DateTime(myDate.Year, 12, 31);
         }
 
         public DateTime PreviousYearEnd(DateTime myDate)
         {
             myDate = myDate.AddDays(-1);
-            return new DateTime(myDate.Year-1, 12, 31);
+            return new DateTime(myDate.Year - 1, 12, 31);
         }
 
         public DateTime NextWeek(DateTime myDate, int weekday)
         {
             int currentDay = (int)myDate.DayOfWeek;
             int wantedDay = weekday;
-            int nrOfDays =0;
+            int nrOfDays = 0;
             if (wantedDay > currentDay) nrOfDays = wantedDay - currentDay;
             else nrOfDays = 7 + (wantedDay - currentDay);
             return myDate.AddDays(nrOfDays);
@@ -284,25 +281,25 @@ namespace DateTimeFunctions
         }
         public int QuarterNumber(DateTime myDate)
         {
-            
+
             if (myDate.Month <= 3) return 1;
             if (myDate.Month <= 6) return 2;
-            if (myDate.Month<=9 ) return 3;
+            if (myDate.Month <= 9) return 3;
             return 4;
         }
 
-        public string GetQuarterAsString (DateTime myDate)
+        public string GetQuarterAsString(DateTime myDate)
         {
             return string.Format("{0}/{1}", QuarterNumber(myDate), myDate.Year);
         }
 
-        public string NextQuarterAsString (string quarterAsString)
+        public string NextQuarterAsString(string quarterAsString)
         {
             int quarter = int.Parse(quarterAsString.Substring(0, 1));
             int year = int.Parse(quarterAsString.Substring(2, 4));
 
             quarter += 1;
-            if (quarter==5)
+            if (quarter == 5)
             {
                 quarter = 1;
                 year += 1;
@@ -310,7 +307,7 @@ namespace DateTimeFunctions
             return string.Format("{0}/{1}", quarter, year);
         }
 
-        public Tuple<DateTime, DateTime> GetQuarterPeriodFromString (string quarterAsString)
+        public Tuple<DateTime, DateTime> GetQuarterPeriodFromString(string quarterAsString)
         {
             int quarter = int.Parse(quarterAsString.Substring(0, 1));
             int year = int.Parse(quarterAsString.Substring(2, 4));
@@ -330,8 +327,8 @@ namespace DateTimeFunctions
             else
             {
                 return new Tuple<DateTime, DateTime>(new DateTime(year, 9, 1), new DateTime(year, 12, 31));
-            }             
-          
+            }
+
         }
 
         /// <summary>
@@ -345,11 +342,11 @@ namespace DateTimeFunctions
             DateTime resultDate = startDate.AddDays(days * -1);
 
             int weekday = (int)resultDate.DayOfWeek;  // returns the day of a week as an integer starting with Sunday =0,  Monday = 1, ...
-            if (weekday >0 && weekday<6) return resultDate;
-          
-                resultDate = resultDate.AddDays(-2);    // take weekend into account           
-            return resultDate;         
-            
+            if (weekday > 0 && weekday < 6) return resultDate;
+
+            resultDate = resultDate.AddDays(-2);    // take weekend into account           
+            return resultDate;
+
 
         }
         public List<Bll_QuarterDescription> GetQuarterList(DateTime fromDate, DateTime? toDate)
@@ -369,5 +366,33 @@ namespace DateTimeFunctions
             } while (fromDate <= toDate);
             return returnList;
         }
+
+        public bool IsEndOfQuarter(DateTime? date)
+        {
+            if (date == null) return false;
+            DateTime d = date.Value;
+            if (d.Month != 3 && d.Month != 6 && d.Month != 9 && d.Month != 12) return false;
+            if ((d.Month == 3 || d.Month == 12) && d.Day != 31) return false;
+            if ((d.Month == 6 || d.Month == 9) && d.Day != 30) return false;
+            return true;
+        }
+        public bool IsEndOfHalfyear(DateTime? date)
+        {
+            if (date == null) return false;
+            DateTime d = date.Value;
+            if (d.Month != 6 && d.Month != 12) return false;
+            if (d.Month == 12 && d.Day != 31) return false;
+            if (d.Month == 6 && d.Day != 30) return false;
+            return true;
+        }
+        public bool IsYearEnd(DateTime? date)
+        {
+            if (date == null) return false;
+            DateTime d = date.Value;
+            if (d.Month != 12) return false;
+            if (d.Day != 31) return false;
+            return true;
+        }
+
     }
 }
